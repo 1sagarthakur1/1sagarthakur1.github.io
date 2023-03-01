@@ -13,5 +13,5 @@ toclose.addEventListener("click",function(){
 
 
 function openResume(){
-    window.open("https://drive.google.com/file/d/10Pbz_sipt-qR3D8dyCI8dGdtBWOjIl1z/view?usp=sharing", "_blank")
+    window.open("https://drive.google.com/file/d/1-tU8qHFngNbiYTBHBkEjkAdV8D0HogXO/view?usp=sharing", "_blank")
 }
