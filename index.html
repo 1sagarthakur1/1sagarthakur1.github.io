@@ -1,508 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Meyawo landing page.">
-    <meta name="author" content="Devcrud">
-    <title>My portfolio</title>
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + Meyawo main styles -->
-	<link rel="stylesheet" href="assets/css/meyawo.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv=X-UA-Compatible content="IE=9;IE=10;IE=11;IE=Edge,chrome=1">
+    <title>Sagar thakur</title>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+<body>
 
-    <!-- Page Navbar -->
-    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
-        <div class="container">
-            <a class="logo" href="#">let's know me</a>         
-            <ul class="nav">
-                <li class="item">
-                    <a class="link" href="#home">Home</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#about">About</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#portfolio">Portfolio</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#testmonial">Individual Projects</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#blog">Projects</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#contact">Contact</a>
-                </li>
-                <li class="item" onclick="openResume()">
-                    <a class="link"  href="assets/imgs/Sagar-Thakur-Resume (1).pdf" download="" >Resume</a>
-                </li>
+    <!-- navbar -->
+    <nav class="nav">
+        <div class="myname">Sagar Thakur</div>
+        <a class="totoggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="subnav">
+            <ul class="toggle_click">
+                <li class="link"><a href="#section1">Home</a></li>
+                <li class="link"><a href="#section2">About Me</a></li>
+                <li class="link"><a href="#section3">Skills</a></li>
+                <li class="link"><a href="#section4">Projects</a></li>
+                <li class="link"><a href="#section5">Contact</a></li>
+                <li onclick="openResume()"><a href="imgs/me.jpg" download="">Resume</a></li>
             </ul>
-            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
-                <div class="hamburger-box">
-                  <div class="hamburger-inner"></div>
-                </div>
-            </a>
-        </div>          
-    </nav><!-- End of Page Navbar -->
+        </div>
+    </nav>
 
-    <!-- page header -->
-    <div>
-        <header id="home" class="header">
-            <div class="overlay"></div>
-            <div class="header-content container">
-                <h1 class="header-title">
-                    <span class="up">HI!</span>
-                    <span class="down">I am Sagar Thakur</span>
-                </h1>
-                <p class="header-subtitle">JAVA BACKEND DEVELOPER</p>            
-                <a href="#portfolio"><button class="btn btn-primary">Visit My Works</button></a>
-            </div>              
-        </header><!-- end of page header -->
+    <!-- Home section -->
+    <section id="section1"></section>
+    <div class="bodyy">
+        <h1 style="color: gray;">Hi!</h1>
+        <h1>I am Sagar Thakur</h1>
     </div>
-
-    <!-- about section -->
-    <section class="section pt-0" id="about">
-        <!-- container -->
-        <div class="container text-center">
-            <!-- about wrapper -->
-            <div class="about">
-                <div class="about-img-holder">
-                    <img src="assets/imgs/me.jpg" class="about-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                </div>
-                <div class="about-caption">
-                    <p class="section-subtitle">Who Am I ?</p>
-                    <h2 class="section-title mb-3">About Me</h2>
-                    <p>
-                       I am a strong, skillful, Java developer with 5 project experience of developing infrastructure-releted components platform, optimizing the existing environments. Have strong Java, javascript, Html, CSS, Mysql and RDBMS knowledge.
-                       <br>
-                       Aspiring Java Backend Developer having a deep interest in backend development, looking for a job to enhance the current skill set and ready to get challanged by new things at work and keen to learn new skills and technologies required for the accomplishment of mutual goals.
-
-                      <h2 style="text-decoration: underline; font-size:19px;">Education</h2>
-                       <p style="font-size:15px; font-family:'Times New Roman', Times, serif; color: rgb(76, 74, 74);">
-                           JAVA backend developer(Full time)
-                           <br>
-                           Masai School, Bangalore,
-                           <br>
-                           Graduation BSc with (Math science)
-                       </p>
-                    </p>
-                    <a onclick="openResume()"  href="assets/imgs/Sagar-Thakur-Resume (1).pdf" download="" ><button class="btn-rounded btn btn-outline-primary mt-4">Resume</button></a>
-                </div>              
-            </div><!-- end of about wrapper -->
-        </div><!-- end of container -->
-    </section> <!-- end of about section -->
-
-    <!-- service section -->
-    <section class="section" id="service">
-        <div class="container text-center">
-            <p class="section-subtitle">What I Do ?</p>
-            <h6 class="section-title mb-6">Skills</h6>
-            <!-- row -->
-            <div class="row">
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card" style="margin-bottom:20px;">
-                        <div class="body">
-                            <img src="assets/imgs/java-logo-1.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
-                            <h6 class="title">JAVA</h6>
-                            <p class="subtitle">This is JAVA (Just Another Virtual Accelerator). it is most popular programming language. programer use it in backend. </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/spring boot.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
-                            <h6 class="title">Spring boot</h6>
-                            <p class="subtitle">Spring Boot is an open source Java-based framework used to create a micro Service.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/Maven.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
-                            <h6 class="title">Maven Tool</h6>
-                            <p class="subtitle"> Maven is a software project management and comprehension tool.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/5847f5bdcef1014c0b5e489c.png" class="icon">
-                            <h6 class="title">HTML</h6>
-                            <p class="subtitle">This is html (Hypertext Markup Language) with the help of html we can build body webpage.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/css-logo.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
-                            <h6 class="title">CSS</h6>
-                            <p class="subtitle">This is CSS (Cascading Style Sheets) with the help of CSS we can design webpage. CSS use for Designing</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/java-script.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
-                            <h6 class="title">JAVASCRIPT</h6>
-                            <p class="subtitle">This is JAVASCRIPT. we use it in the backend. we can say that javascript is the soul of website.</p>
-                        </div>
-                    </div>
-                </div>
-               
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/MySQL-Logo.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
-                            <h6 class="title">Mysql</h6>
-                            <p class="subtitle">MySQL is an open-source relational database management system. </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/Git-Icon.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
-                            <h6 class="title">Git</h6>
-                            <p class="subtitle">GitHub is a code hosting platform for version control and collaboration.</p>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- end of row -->
+    <div class="photo">
+        <div class="resume">
+            <div style="color: gray;">JAVA BACKEND DEVELOPER</div>
+            <div class="downResume" onclick="openResume()"><a href="imgs/Sagar-Thakur-Resume (1).pdf" download=""><b>Download</b></a></div>
         </div>
-    </section><!-- end of service section -->
+        <div><img src="imgs/me.jpg" alt="xxxxxxxxx"></div>
+    </div>
+    <section id="section2"></section>
+    <div class="des">
+        <div class="aboutme">ABOUT ME</div> <div class="vertline"></div>
+        <p>
+            I am a strong, skillful, Java developer with 5 project experience of developing infrastructure-releted components platform, optimizing the existing environments. Have strong Java, javascript, Html, CSS, Mysql and RDBMS knowledge.
+            Aspiring Java Backend Developer having a deep interest in backend development, looking for a job to enhance the current skill set and ready to get challanged by new things at work and keen to learn new skills and technologies required for the accomplishment of mutual goals.
+        </p>
+    </div>
+    <section id="section3"></section>
+    <div class="services_skills">
 
-    <section class="section" id="service">
-        <div class="container text-center">
-            <h6 class="section-title mb-6">Tools</h6>
-            <!-- row -->
-            <div class="row">
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;">
-                        <div class="body">
-                            <img src="assets/imgs/STS.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
-                            <h6 class="title">STS</h6>
-                            <p class="subtitle">Spring Tool Suite (STS) is a java IDE tailored for developing Spring-based enterprise applications.</p>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;">
-                        <div class="body">
-                            <img src="assets/imgs/IntelliJ_IDEA.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
-                            <h6 class="title">Intellij</h6>
-                            <p class="subtitle">IntelliJ IDEA is undoubtedly the top-choice IDE for software developers.</p>
-                        </div>
+        <!-- skills -->
+        <div class="skills">
+            <div class="aboutme">My Skills</div>
+            <div class="vertline"></div>
+            <div class="serviceimg" id="skillsimg">
+                <div class="serviceimgbox">
+                    <img class="siillimg" src="imgs/Html.png" alt="">
+                    <div class="middle">
+                        <div class="text">HTML</div>
                     </div>
+                    <div>HTML</div>
+                    <div class="danda"></div>
                 </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;">
-                        <div class="body" >
-                            <img src="assets/imgs/spring boot.png" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
-                            <h6 class="title">Spring Boot</h6>
-                            <p class="subtitle">Spring Boot is an open source Java-based framework used to create a micro Service.</p>
-                        </div>
+                <div class="serviceimgbox">
+                    <img src="imgs/Css.png" alt="">
+                    <div class="middle">
+                        <div class="text">CSS</div>
                     </div>
+                    <div>CSS</div>
                 </div>
-                
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card"  style="box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;">
-                        <div class="body">
-                            <img src="assets/imgs/Visual_Studio.png" class="icon">
-                            <h6 class="title">Vs Code</h6>
-                            <p class="subtitle">Visual Studio Code is a code editor redefined and optimized for building modern web and applications.</p>
-                        </div>
+                <div class="serviceimgbox">
+                    <img src="imgs/java-script.png" alt="">
+                    <div class="middle">
+                        <div class="text">JavaScript</div>
                     </div>
+                    <div>JavaScript</div>
                 </div>
-            </div><!-- end of row -->
+                <div class="serviceimgbox">
+                    <img src="imgs/java-logo-1.png" alt="">
+                    <div class="middle">
+                        <div class="text">JAVA</div>
+                    </div>
+                    <div>JAVA</div>
+                </div>
+                <div class="serviceimgbox">
+                    <img src="imgs/MySQL-Logo.png" alt="">
+                    <div class="middle">
+                        <div class="text">My SQL</div>
+                    </div>
+                    <div>My SQL</div>
+                </div>
+                <div class="serviceimgbox">
+                    <img src="imgs/STS.png" alt="">
+                    <div class="middle">
+                        <div class="text">Hibernate</div>
+                    </div>
+                    <div>Hibernate</div>
+                </div>
+                <div class="serviceimgbox">
+                    <img src="imgs/spring boot.png" alt="">
+                    <div class="middle">
+                        <div class="text">Spring Boot</div>
+                    </div>
+                    <div>Spring Boot</div>
+                </div>
+                <div class="serviceimgbox">
+                    <img src="imgs/" alt="">
+                    <div class="middle">
+                        <div class="text">AWS</div>
+                    </div>
+                    <div>AWS</div>
+                </div>
+            </div>
         </div>
-    </section>
 
-    <!-- portfolio section -->
-    <section class="section" id="portfolio">
-        <div class="container text-center">
-            <!-- <p class="section-subtitle">What I Did ?</p> -->
-            <p class="section-subtitle">These are my technical Skils, These are increasing</p>
-            <h6 class="section-title mb-6">My Skils</h6>
-            <!-- row -->
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img src="assets/imgs/forntend.png" class="portfolio-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Frontend Developer</h5>
-                                <p class="font-weight-normal">HTML, CSS, JAVASCRIPT</p>
-                            </span>                         
-                        </span>                     
-                    </a>
+
+
+
+        <!-- tools-->
+        <div class="skills">
+            <div class="aboutme">My Tools</div>
+            <div class="vertline"></div>
+            <div class="serviceimg" id="toolsimg">
+                <div><img src="data:image/jpeg;base64,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" alt="">
+                    <div class="middle">
+                        <div class="text">Spring Tool Suit</div>
+                    </div>
+                    <div>Spring Tool Suit</div>
                 </div>
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/backend1.png" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Backend</h5>
-                                <p class="font-weight-normal">JAVA, JAVASCRIPT, PYTHON, MySql</p>
-                            </span>                         
-                        </span>                         
-                    </a>
+                <div><img src="data:image/png;base64,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" alt="">
+                    <div class="middle">
+                        <div class="text">GitHub</div>
+                    </div>
+                    <div>GitHub</div>
                 </div>
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/Picsart.jpg" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Data Structure</h5>
-                                <p class="font-weight-normal">JAVA, JAVASCRIPT</p>
-                            </span>                         
-                        </span>                     
-                    </a>
+                <div><img src="data:image/png;base64,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" alt="">
+                    <div class="middle">
+                        <div class="text">Lombook</div>
+                    </div>
+                    <div>Lombook</div>
                 </div>
-            </div><!-- end of row -->
-        </div><!-- end of container -->
-    <!-- </section> end of portfolio section -->
-
-    
-    <!-- project section -->
-    <section class="section" id="blog">
-        <!-- container -->
-        <div class="container text-center">
-            <p class="section-subtitle">You can see here my work experience</p>
-            <h6 class="section-title mb-6">My Projects</h6>
-            <!-- blog-wrapper -->
-            <div class="blog-card">
-                <div class="blog-card-header">
-                    <img src="assets/imgs/Crime INMS.png" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                <div><img src="data:image/png;base64,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" alt="">
+                    <div class="middle">
+                        <div class="text">Swagger</div>
+                    </div>
+                    <div>Swagger</div>
                 </div>
-                <div class="blog-card-body">
-                    <h5 class="blog-card-title">Crime information management system</h6>
-
-                    <p>Crime Information Management System,This is my java Backend (crime information management system) project,it was my individual project, I tried to make it best, you can see. I used there java programing language and for database I am using MYsql.</p>
-
-                    <p><b>
-                        It was an Console based project. I tried to create here crime information
-                        management system. I have added there much functionality <br> - In this project, I have made logging functionality. <br> - Solve and unsolve crime. <br>
-                        - See all crimes with criminal details </b></p>
-                    <p style="color:#695aa6; font-weight: 700;">JAVA / MySQL / JDBC / STS</p>
-                    <p></p>
-                    <a href="https://github.com/1sagarthakur1/crime-information-management-system-"><button class="btn-rounded btn btn-outline-primary mt-4">Repo</button></a>
-                    <a href="https://github.com/1sagarthakur1/crime-information-management-system-" ><button class="btn-rounded btn btn-outline-primary mt-4">Visit My Project</button></a>
-                </div>
-            </div><!-- end of blog wrapper -->
-
-            <div class="blog-card">
-                <div class="blog-card-header">
-                    <img src="assets/imgs/pharmeasey.png" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                </div>
-                <div class="blog-card-body">
-                    <h5 class="blog-card-title">Clone of Pharmeasy website</h6>
-
-                    <p>This is My Pharmeasy Project.PharmEasy is a consumer healthcare "super app" that provides consumers with on-demand. home deliverd access to wid range fo prescription. we have tried to make it clone. we learned a lot from this.</p>
-
-                    <p><b>It was a group project of 6 members and contributed the following
-                        things.in this project, I have made the navbar, Home page and popup window functionality. We used tools in it.</b></p>
-                    <p style="color:#695aa6; font-weight: 700;"> HTML / CSS / javascript</p>
-                    <p></p>
-                    <a href="https://github.com/vinaykumar2n/project_pharmeasy"><button class="btn-rounded btn btn-outline-primary mt-4">Repo</button></a>
-                    <a href="https://papaya-salmiakki-482569.netlify.app/sagar%20and%20pravhat/navbarforhome" ><button class="btn-rounded btn btn-outline-primary mt-4">Visit My Project</button></a>
-                </div>
-            </div><!-- end of blog wrapper -->
-
-            <div class="blog-card">
-                <div class="blog-card-header">
-                    <img src="assets/imgs/bewakoof.png" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                </div>
-                <div class="blog-card-body">
-                    <h5 class="blog-card-title">Clone of Bewakoof</h6>
-
-                    <p> Bewakoof is a lifestyle fashion brand that makes creative, distinctive fashion for the trendy, contemporary Indian. Bewakoof was created on the principle of creating impact through innovation, honesty and thoughtfulness. With a team of 400 members, and 8 Million+ products sold till date.</p>
-
-                    <p><b>I was assigned the team leader by the Masai School and it was a
-                        wonderful experience while leading a team of 5 members. I
-                        contributed the following things. in this project, I have made signup and logging functionality.
-                        Home page
-                        import-export functionality. We used tools in it.</b></p>
-                        <p style="color:#695aa6; font-weight: 700;"> HTML / CSS / javascript / fatching API / Import-Export </p>
-                    <a href="https://github.com/1sagarthakur1/giving-scene-667-Bewakoof"><button class="btn-rounded btn btn-outline-primary mt-4">Repo</button></a>
-                    <a href="https://bewookoof-app-groupproject.netlify.app/" ><button class="btn-rounded btn btn-outline-primary mt-4">Visit My Project</button></a>
-                </div>
-            </div><!-- end of blog wrapper -->
+            </div>
+        </div>
 
 
-            <div class="blog-card">
-                <div class="blog-card-header">
-                    <img src="assets/imgs/cricket.png" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                </div>
-                <div class="blog-card-body">
-                    <h5 class="blog-card-title">Clone of Cricket.com</h6>
-                    <p>Get live cricket scores, scorecard updates, match schedule, predictions & results, stats, latest news & videos of all international, domestic & T20 series ...</p>
-
-                    <p><b>It was a group project of 6 members and contributed the following
-                        things.in this project, I have made the player page, fantasy Center . We used tools in it.</b></p>
-                    <p style="color:#695aa6; font-weight: 700;"> HTML / CSS / javascript / fatching API / Import-Export </p>
-                    <a href="https://github.com/Nnishks/Cricket.com_Clone/tree/main/pagelink"><button class="btn-rounded btn btn-outline-primary mt-4">Repo</button></a>
-                    <a href="https://smooth-book-cricket-com.netlify.app/" ><button class="btn-rounded btn btn-outline-primary mt-4">Visit My Project</button></a>
-                </div>
-            </div><!-- end of blog wrapper -->
-
-            <!-- end of blog wrapper -->
-        </div><!-- end of container -->
-    </section><!-- end of blog section -->
 
 
-     <!-- testimonial section -->
-     <section class="section" id="testmonial">
-        <div class="container text-center">
-            <p class="section-subtitle">You should see these'</p>
-            <h6 class="section-title mb-6">These are my individual projects</h6>
-
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="testimonial-card">
-                        <div class="testimonial-card-img-holder">
-                            <img src="assets/imgs/Screenshot (105).png" class="testimonial-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">                           
-                        </div>
-                        <div class="testimonial-card-body">
-                            <p class="testimonial-card-subtitle">This was my individual project. in this project, I tried to create a Weather webpage. you can see your Weather to it.I used here HTML, CSS, API and javascript visit it.</p>
-                            <a href="https://neon-biscochitos-a5e780.netlify.app/"><h6 class="testimonial-card-title">Weather</h6></a>
-                        </div>
+        <!-- services -->
+        <div class="services">
+            <div class="aboutme">My Services</div>
+            <div class="vertline"></div>
+            <div class="serviceimg" id="service_des">
+                <div><img src="https://static.vecteezy.com/system/resources/thumbnails/004/601/559/small/website-coding-glyph-icon-vector.jpg" alt="">
+                    <div class="middle">
+                        <div class="text">Backend Development</div>
+                    </div>
+                    <div>
+                        Backend Development
                     </div>
                 </div>
-
-                <div class="col-md-6">
-                    <div class="testimonial-card">
-                        <div class="testimonial-card-img-holder">
-                            <img src="assets/imgs/Screenshot (106).png" class="testimonial-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">                           
-                        </div>
-                        <div class="testimonial-card-body">
-                            <p class="testimonial-card-subtitle">This was my individual project. in this project, I tried to create a student management system.I used here HTML, CSS, and javascript visit it.</p>
-                            <a href="https://lively-cobbler-aeccd9.netlify.app/"><h6 class="testimonial-card-title">Student Management System</h6></a>
-                        </div>
+                <div><img src="https://www.kindpng.com/picc/m/466-4661766_web-design-and-website-development-icon-web-design.png" alt="">
+                    <div class="middle">
+                        <div class="text">Web Design</div>
+                    </div>
+                    <div>
+                        Web Design
                     </div>
                 </div>
-
-                <div class="col-md-6">
-                    <div class="testimonial-card">
-                        <div class="testimonial-card-img-holder">
-                            <img src="assets/imgs/Screenshot (104).png" class="testimonial-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">                        
-                        </div>
-                        <div class="testimonial-card-body">
-                            <p class="testimonial-card-subtitle">This was my individual project. in this project, I tried to create a serve food system.I used here HTML, CSS, and javascript visit it.</p>
-                            <a href="https://soft-hamster-083f9b.netlify.app/"><h6 class="testimonial-card-title">Food found</h6></a>
-                        </div>
+                <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPgAAADLCAMAAAB04a46AAAAh1BMVEX///8AAACUlJTp6enU1NSZmZnBwcE3Nzfv7++4uLjY2NiCgoJiYmJ+fn5sbGyIiIh2dnZXV1f29vYpKSnHx8fh4eHk5OSxsbGtra309PTs7OwiIiJCQkKOjo49PT2np6cQEBAbGxtMTEwoKCifn59lZWVaWlo6OjpwcHAwMDALCwscHBxQUFAOo8ktAAAPi0lEQVR4nN1d2ULiMBRlEwHZBqkoiwVkFBz///sG6JbcJclt00I9b9Ym5DTLXZM0GvXCbNF6nQe3bkX1mDcj7P4cD/3lrVtTHXpNDZNbt6cyPOjEm4dbN6gqjAHx5q0bVAr66+1+oT86QeK/cZn7e2X2pD2DvJu9GzWuPAT/Ympqn/cQ8Zu1T4r2oDPvLy7ozjsB31+v5GjuQN6nCppcEIP+5PiIOqz5/TM9dF/Q20fllVX2uAuLHytkIMfLYkpQVvAICzxr//57ffjWWbTWsOT9CvJe/7gzkr5gpJdBAzpsdDbvZMkF/au3xtsr6iISoV4Mv/APP4rQuQ0xMxY/TqzP6Gvl+q7Fzji2lYKH99Oo3bgxgomg+Trxg6DkeZq8xcXihWFQPVcFnT+Stq/0xqKl24JonqfjZHYLwnHL3WZ2gj4svxUy/zyXmaZ/7W/A+IrOl6jVU1xDICTe/J6rv7mpnvMZL6JBzsijV3s5E+ZVkz7jyU8bkfUpQ+WWS/fbD+9G46MQ8fcqSTcSO1KAB7aql0LEq9Vk5/b2AKz5ygbFiDex2VMaNi7t2e2HT4fwtX9BeOBbN5POGYjKfHGzva0p76NFx1m3EE8aCH4S+UVg7qGPjUzCSHU3jIqMF2ND30Ox35+raTMPerO3oLtBPkeAP2WwxDBYFbuHHMtMi6xqotYUGBWGoTdqRvDL2l4ywruj8WExuJiVVFXTN/B6j1dyQqp6/2C//VBkIQ6TYifK10J9QW6CVWSYjpif/5G5+unhHWNL66CklvPjg5QDmP4+SQ0Fkym6hcM8QRu/W5XOxnSUWH+YmTqcHzvILQkCL6VhQTZ0L3d8YQYZTJ5UGD2tKLRCq+d51EWDJmD2qDzD16tQXYgpdpbcueKXuOdSmBdp9O2rUFZXRDNz6kxToqoIBhPuCmi5V6C8UBpE3kWVt3FssRKkNuZsgTsox1hunYnlbfUWo/mWtwmuoLSHbu7aWN72OPAOlCg7R4LwnefnzTuU7XHgT1Di43MUdl84nacwiGU4P28D8Za1LLMursuRa0v8S4Uitixxu1LAGoelMMersL1rTGAVmALEYbqBD+BIbtGcjC5SwSLY9RHOPGw2S8j43JXwdZedxcN4D600IrQGABe3DP5j5djX5O3jQhXUprjR+mMEX21KgW3IAgs6AFo1bQVIg+GKD2+NSoCWE/t4dIf0m4Ysce9aO+5wn7VDefFpeZ9PJPMeJ0e6i7+B3iB8WWYV1BCx8+5shT9g6xMZkEQ3V29Iv/CtwCCrzK/UkK2c/Az3b63A8I1vvyYOGPKy0pgt47ldyC3oO70Ka2KsadozOqU9t+sI6ve8ds6o5KET/XGXvO7S9O58Q1PQb4czmRCkB5NySZ/SMeB3ycXmid8ZzsddkfE3I42T8/NgHm4+xyhrsCjgSPSaWTWkuCQI1bHVo0M45WWAwJHuVS20pZN8hoPzd54tOyGTF7312RodcKT7TCKUp01BlJjSCITszmfdkkRvEmVuUAE/5VWWOSWMGbDiq+4UNSegtPGqFZoipi4wNOarqCEFTKfnYrVBFMtu2/IaxUUE5J//wQEpVb7VdKMmZgUbT44MvnzM56Md8VO+DT9xhr4Oph+SKSRPCupwQVzv2z/oDAtnkJ2aSWCZsjU77LjfKWH3h2oCPUr2YbHUlGVJshF1AI0xFWUoiFmcf3o2v8w7MzGQM3q+U//tLOgtu6jKCE6l0ecoFGdMfyOgz+MB/HBu8b3Atq+mlFBstAQ/J4mrbdnmHp0Zdkw5uMlos0+FV301w+Dv7qQ6ETrOOzWbcHnDxO2BGYf11WcYwQTJGqeXJMx7i8+55/KVq9r+QKeCnZ7m2AcPVx1CFzTOT7dvXNW+NpRdtX4K55HnVc9Heca58di18dfwS4675qravYr8E1m/aiHGMVUYp+qwCtyM3psPsa4oXZYIxisdqzgvaFE1Qx5oLq+7ze7OT7A6HuYV7k83xygTI37FGaVY/6enqMVOWLfmVW/cRB5nXYxGy7Bh5qKQF9nlRt7T7i02pSNXHEiXfTg1340aGVrgiMFh2NI5vsXm5AvQaT9SLwCaK1hlxycKxfioaGMPCWgUv0orQMoYGrjMPrb3W3V2jLGl2VZAXrAbaZ+XeF+NfwxeN8NUIOewCeEyAQxzOsguHlil4a3Tb43CXOsrVGM0JYZc0D9veLiIR8D8Ei0ESU3w++nugtjpvNRETMLXkW9fzV0CWniZ1kskCH79jmF+BRTU2VDG9pvdWVEnABMvVXFx3Op38YYae6rvI7P14xeN8wtgcnC8fOEO/3XHGgOhFZs1yIfrPXfm5gBupciNgpb0kaWWGgLoMJFRjpIwftkEvwAKtOtD6Jf6fQO9gYLvFzczNF6qPhyrGoB17GLkwWDR7e3QMgByiy5JMTv9URkb1e4AQIU5YDfmrU63fVue0SttXQUTeoJDa+51zTYthIewqxp1A+KVGBuF43yzTxaf0zhMvfZtvjSswQogs0fIPhEEQVnn5Dh1cZjCcKmHHru+4/K28+wkPn6gtH6ibEVBKhxLPPt8DsRfqG2lG+/EgZf5vfEGKhMMHwPxxO1vJ86Qe/JNHGgrKzjpJalMJuJx+NxKnD3zp++buH5+yAq62yVxCiPxaOhYibMHoXz7Jq7bZ/+gYJcIMzPx0IW4UsWiPVuqxzb3SyXehJ9c4mBUWt19uWAQ7rJHQ5349wNA6zIksvEWL+R/1fKlEgfpLhIPhEI8kV9KIP5ZJ74lq0jN5H/xA2WtPcve8TTGKGv2+yh5eBQlnOnEV2A77rekKoK44qZeuRDPOjjRWhK1YrvS+jNLscybM62v6v8aegaE6OIRinjG1Im4MtEWkSB9mXeCJZapWeQwZw4KEB+PQH8pTDxzalwFo424FrDbT7rsrC1MHKzEP4C4yBYniCsRuKvypRB/aeuA78c9MaGt4sLEga4+9kR8vmy3l0FfNe0DnThCVAeVSngkQsGFiQNP8sTTUMeIghU88XjTEH24xQlRL0wcKGot4IvyRjzeG2Mlzm0+gkZiYeIgKtoH4m3rifgujkfaiTcC+tAfYDQUJg4OyunAcJpEGeKJjxN55ECc20Ss93lh4uCMwyVUWSWHRDPEv1qZ3ssT36o1LagNtVrCRlHi2K9OeB8LEh8qAknR1Sc6wPbMt/4Ruve1rcpFiYNIyhr5fSQnDKhGShAqYynLmrQpMBraCz3xSv1fUeIgdjZF3kfJEQNAgVFMyjTtUkT8jJmatKGO9aLEwQq6QIJUstMEEFdHfmJJWIh3w0NrMv75+sjEqLIqqMK8IHGYrHpZysAjwU5EqLKqorIDaWypGrLc+CwR/ATruKIgcSA4rt0LgkqCSY50daWauAstxDORku1wyRZ41SlSkDgY6dfdDEClESS/IOLqQhmJBwtxZVwnCoRiPqpvFiNORotgsNR99wG2zpSV/QMyewZYTTV/yyrWIDKrRUuvLkYc7hS9+pmgg9f9vE1MXJWWfUAc4WLGqOrTeDHvqlqFPwUGKhzxqIaWYQHiqkjbuRAnDnhNoOfTFyIOA+Fx3jZMW3ZOiCCIq7bWqwNx/mCyne5+KkIcmb5v9HPnADnlelJkxNaFOBdR2AJ3bxHiMBE/Va+gheCaEkERVzWF0IU4ff7LGnqOCxBH23lSfnDThuvBnhRxbQGdGYknRsgApdmd8GzLek1MHNa+4//lmKf+9jmM8SfTNXp/hunTfqMzHbHItoa0w7+pe3+3b1G7L1rJb31KNwah/GSlArRXvLTjyXnMeu3BYNDzvp/PeKMI2m/m+xi42wHPNW37Nzq5+U7vtxYDn1+uB8lwWLLC6xBLBHFuO1g3UZf/ioR14sAHaIPhLr/Z5cb+QB2UhkYyVqBMhwrUAeRJp9jbAJOfas+cPAmRGsbETTc1FmrMMTaklkBc+bKu/F5nT1jQF6nSG3JJ07iWKdzc3e+cJk4aFLLtKcsOAvfqG341Q8Dd6TOwV9/hznflj9Yk58VOslGDCPNzMSnrPbzPwwN2daPTDaGHsM+e5mLqQrrQ2nm8U7OFWyGdLiBetUDPoxPeNOLt1o6typiVzSWWnl7d9DjyWCZm0LrevKwfKWUkbjrg1DJl+VtHhn0H7uQxm8xhWM5XTr+rP5yXuNV1bPpo5GFK9sKMP8f9ru2VMmZyEncwNg3MrRc1Mn5DOhonuGRcSczJRfzbKR7IM7cSZ8rR00tyu3pWQx7ie0dDkz32yEacdSwWJp6FD3MQdz9wrwfvAnUkzh77R4pyEfHUXhIT/xIddEEfhWMhzksEUpSLiKfWhZS49HxFMrBjIW44Q5WydWTEk2VZRnwsN7IC4lgYC3FmglxAfXdEPAkUBFTuVzLWJcR/BMkdCnDWnZm4SQOgEkVZ4g3KiZAoA+7E97kPCu5BsWwmzt+r3CRFuYk4ISCExIeFzkcO9OiLkThQ88FnIES5kTj2irQlxJ8KO8fbqqVqJA48ucud/reUOHKEDZyJr/0ceDAL02XOSFzvonc48rEoNxNHK0Y8dG3EP1oeDxANHh6txIEQP0BeuKyQuEuPDzbej+Va9qePxhADEOIBMu2RRDUTR6tbPGvNjohyMDOJRT3z+BJ6B+58JMrNxFEwIDY0bkHcBHwOAVyekCg3EkeCfBv/496Ig4M0LysRzC2D40WmwCTq/p0RhxP6+hA4t6EoR8SThOden7hnOZkpd0YcCPHIRwWNFlAGEV+tLzjRFzQmy/WdEQdWRaRBwMgz0CtE1lkqUO6LOEyhiVdg4HMFolxEPPXs3xdxEIBPGMKT+XVRLiGe7XG5L+IgNJnkkcG1WRflEuLZJ7sr4lzCO1zrdQe7gLgSwror4kCIf6X/gK47zUZ2J66uivdEnE/0hwq3JspdiX9rn+ueiEPTOVPR0E5EtZgj8Sc9GnBPxIGzRN24Br2G6qB1Ij6Bh5TcEXEYePmcZzB57azEhw+EOXhHxEX3rCodiIgfg0GGFybedUfETZefIyii3GyPc7gf4rIbhRVRXnfiwltWs2lbc+LscWwMMlFec+LstjEOacmaE2fulOGRivJ6E5dfqptamPUmnuOy9KSl9SYu552K8loTl2U1RHjmytaJONzEt91MIDYo2zE2M+tMHJmd1K3HKDUmFuV1Jo6EOJXXhfc3Rc/rTBy1gjSpEPFIlNeYOOpL+kpQlBwTvVZj4uhGW3rPB176e+Tj+hCnCTm8dxXl9SWOWv7FvIiCnyuyeG2Io5xdbhcA3sp3EeWIuNN+J3TM4Q2It+Ah0lwbeujNS2gkAE9bTkfohbCq3Gcb/AfHFdFb7uEXmgAAAABJRU5ErkJggg==" alt="">
+                    <div class="middle">
+                        <div class="text">Rest API</div>
+                    </div>
+                    <div>
+                        Rest API
                     </div>
                 </div>
             </div>
-        </div> 
-    </section>
-     <!-- end of testimonial section -->
+        </div>
+    </div>
 
-     <style>
-        #sit{
-            justify-content: center;
-            display: flex;
-           flex-wrap: wrap;
-        }
-        .gtt{
-            padding:50px;
-        }
-     </style>
-     <div id="sit">
-         <p><img class="git" align="center" width="500" src="https://github-readme-stats.vercel.app/api/top-langs?username=1sagarthakur1&show_icons=true&locale=en&layout=compact" alt="1sagarthakur1" /></p>
-         <p>&nbsp;<img class="git" align="center" width="500" src="https://github-readme-stats.vercel.app/api?username=1sagarthakur1&show_icons=true&locale=en" alt="1sagarthakur1" /></p>
-         <p><img class="git" align="center" width="500" src="https://github-readme-streak-stats.herokuapp.com/?user=1sagarthakur1&" alt="1sagarthakur1" /></p>
-     </div>
+    <!-- Projects -->
+    <section id="section4"></section>
+    <div class="projects">
+        <div class="aboutme">Projects</div>
+        <div class="vertline"></div>
 
-     
-     <div id="git_cal">
-        <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-      
-      <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-      <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
-      
-      <!-- Prepare a container for your calendar. -->
-     </div>
-      <div class="calendar">
-          <!-- Loading stuff -->
-          Loading the data just for you.
-      </div>
-      <script>
+        <div id="websites" class="projectsimg">
+            <!-- project1 -->
+            <div class="psj">
+                <div class="projectImg">
+                    <img src="imgs/Crime INMS.png" alt="xxxxxxxxx">
+                </div>
+                <div class="subnav linksinprojects">
+                    <h2>YourDoorFood App</h2>
+                    <div class="project_des">
+                        <p>Crime Information Management System,This is my java Backend (crime information management system) project,it was my individual project, I tried to make it best, you can see. I used there java programing language and for database I am using MYsql.</p>
+                        <h5>
+                            It was an Console based project. I tried to create here crime information management system. I have added there much functionality <br>
+                           - In this project, I have made logging functionality. <br>
+                           - Solve and unsolve crime. <br>
+                           - See all crimes with criminal details
+                        </h5>
+                        <div class="techstack"><h2>Tech Stack: Java, Hibernate, Spring Boot</h2></div>
+                        <ul>
+                            <li><a href="https://github.com/sunnylalwani41/tasty-hour-5423">GIT REPO</a></li>
+                            <li><a href="https://drive.google.com/file/d/1nLJm-MjeW6s_TiEJ7NTuBMivBDPSBPql/view?usp=sharing">Presentation</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- project2 -->
+            <div class="psj">
+                <div class="projectImg">
+                    <img src="imgs/pharmeasey.png" alt="xxxxxxxxx">
+                </div>
+                <div class="subnav linksinprojects">
+                    <h2>Clone of Pharmeasy website</h2>
+                    <div class="project_des">
+                        <p>This is My Pharmeasy Project.PharmEasy is a consumer healthcare "super app" that provides consumers with on-demand. home deliverd access to wid range fo prescription. we have tried to make it clone. we learned a lot from this.</p>
+                        <h5>
+                            It was a group project of 6 members and contributed the following things.in this project, I have made the navbar, Home page and popup window functionality. We used tools in it.
+                        </h5>
+                        <div class="techstack"><h2>Tech Stack:HTML / CSS / javascript / fatching API / Import-Export</h2></div>
+                        <ul>
+                            <li><a href="https://github.com/sunnylalwani41/tasty-hour-5423">GIT REPO</a></li>
+                            <li><a href="https://drive.google.com/file/d/1nLJm-MjeW6s_TiEJ7NTuBMivBDPSBPql/view?usp=sharing">Presentation</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- project3 -->
+            <div class="psj">
+                <div class="projectImg">
+                    <img src="imgs/pharmeasey.png" alt="xxxxxxxxx">
+                </div>
+                <div class="subnav linksinprojects">
+                    <h2>Clone of Bewakoof</h2>
+                    <div class="project_des">
+                        <p>Bewakoof is a lifestyle fashion brand that makes creative, distinctive fashion for the trendy, contemporary Indian. Bewakoof was created on the principle of creating impact through innovation, honesty and thoughtfulness. With a team of 400 members, and 8 Million+ products sold till date.</p>
+                        <h5>
+                            I was assigned the team leader by the Masai School and it was a wonderful experience while leading a team of 5 members. I contributed the following things. in this project, I have made signup and logging functionality. Home page import-export functionality. We used tools in it.
+                        </h5>
+                        <div class="techstack"><h2>Tech Stack:HTML / CSS / javascript / fatching API / Import-Export</h2></div>
+                        <ul>
+                            <li><a href="https://github.com/sunnylalwani41/tasty-hour-5423">GIT REPO</a></li>
+                            <li><a href="https://drive.google.com/file/d/1nLJm-MjeW6s_TiEJ7NTuBMivBDPSBPql/view?usp=sharing">Presentation</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- project4 -->
+
+            <div class="psj">
+                <div class="projectImg">
+                    <img src="imgs/cricket.png" alt="xxxxxxxxx">
+                </div>
+                <div class="subnav linksinprojects">
+                    <h2>Clone of Cricket.com</h2>
+                    <div class="project_des">
+                        <p>Get live cricket scores, scorecard updates, match schedule, predictions & results, stats, latest news & videos of all international, domestic & T20 series ...</p>
+                        <h5>
+                            It was a group project of 6 members and contributed the following things.in this project, I have made the player page, fantasy Center . We used tools in it.
+                        </h5>
+                        <div class="techstack"><h2>Tech Stack: HTML / CSS / javascript / fatching API / Import-Export</h2></div>
+                        <ul>
+                            <li><a href="https://github.com/sunnylalwani41/tasty-hour-5423">GIT REPO</a></li>
+                            <li><a href="https://drive.google.com/file/d/1nLJm-MjeW6s_TiEJ7NTuBMivBDPSBPql/view?usp=sharing">Presentation</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="section5"></section>
+    <div class="contact">
+        <div class="aboutme">Contact</div>
+        <div class="vertline"></div>
+        <div class="contact_me">
+            <ul>
+                <a href="https://github.com/1sagarthakur1">
+                    <li><img src="imgs/icons8-git-27.png" alt=""></li>
+                    <li>GITHUB</li>
+                </a>
+                <a href="https://www.linkedin.com/feed/">
+                    <li><img src="imgs/icons8-linkedin-2-30.png" alt=""></li>
+                    <li>LINKED IN</li>
+                </a>
+                <a href="mailto:sagarthakur@gmail.com">
+                    <li><img src="imgs/icons8-gmail-logo-27.png" alt=""></li>
+                    <li>Eamil <span style="font-size: 0.95rem;">sagarthakur@gmail.com</span></li>
+                </a>
+                <a href="tel:+918120337567">
+                    <li><img src="https://www.citypng.com/public/uploads/preview/-121610564853gg73ucwrdk.png" alt=""></li>
+                    <li>Phone +91 8120337567</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <div class="aboutme">Stats</div>
+    <div class="vertline"></div>
+    <div class="stats" id="stats">
+        <img height="200px" width="300px"src="https://github-readme-stats.vercel.app/api?username=1sagarthakur1&show_icons=true&locale=en" alt="1sagarthakur1">
+        <img height="200px" width="300px" src="https://github-readme-stats.vercel.app/api/top-langs?username=1sagarthakur1&show_icons=true&locale=en&layout=compact" alt="1sagarthakur1">
+        <img height="200px" width="300px" src="https://github-readme-streak-stats.herokuapp.com/?user=1sagarthakur1&" alt="1sagarthakur1" /></p> 
+    </div>
+    <div class="calender_container", style="margin: auto;">
+    <div class="calendar">
+        <!-- Loading stuff -->
+        Loading the data just for you.
+    </div>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+    <link rel="stylesheet"href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+
+    <script>
         GitHubCalendar(".calendar", "1sagarthakur1");
         // or enable responsive functionality
         GitHubCalendar(".calendar", "1sagarthakur1", { responsive: true });
     </script>
-
-
-    <!-- section -->
-    <section class="section-sm bg-primary">
-        <!-- container -->
-        <div class="container text-center text-sm-left">
-            <!-- row -->
-            <div class="row align-items-center">
-                <div class="col-sm offset-md-1 mb-4 mb-md-0">
-                    <h6 class="title text-light">Want to work with me?</h6>
-                    <p class="m-0 text-light">Always feel Free to Contact & Hire me</p>
-                </div>
-                <div class="col-sm offset-sm-2 offset-md-3">
-                    <a href="#contact"><button class="btn btn-lg my-font btn-light rounded">Hire Me</button></a>
-                </div>
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </section> <!-- end of section -->
-
-
-    <!-- contact section -->
-    <section class="section" id="contact">
-        <div class="container text-center">
-            <p class="section-subtitle">How can you communicate?</p>
-            <h6 class="section-title mb-5">Contact Me</h6>
-            <div>
-                <img src="assets/imgs/icons8-ringer-volume-27.png" alt="">
-                <a href="#">+91 8120337567</a>
-            </div>
-            <div>
-                <img src="assets/imgs/icons8-gmail-logo-27.png" alt="">
-                <a href="#"> 1sagarthakur1@gmail.com</a>
-            </div>
-        </div><!-- end of container -->
-    </section><!-- end of contact section -->
-
-    <!-- footer -->
-    <div class="container">
-        <footer class="footer">       
-            <p class="mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="http://www.devcrud.com">DevCRUD</a></p>
-            <div class="social-links text-right m-auto ml-sm-auto">
-                <a href="https://www.facebook.com/sagarsinghthakur123" class="link"><img src="assets/imgs/icons8-facebook-27.png" alt="" style="padding-bottom:6px;"></a>
-                <a href="https://twitter.com/sagarsi99105118" class="link"><img src="assets/imgs/icons8-twitter-27.png" alt="" style="padding-bottom:6px;"></a>
-                <a href="https://mail.google.com/mail/u/0/?tab=rm#inbox" class="link"><img src="assets/imgs/icons8-gmail-logo-27.png" alt="" style="padding-bottom:6px;"></a>
-                <a href="https://github.com/1sagarthakur1" class="link"><img src="assets/imgs/icons8-git-27.png" alt="" style="padding-bottom:6px;"></a>
-                <a href="https://www.linkedin.com/in/sagar-singh-thakur-982400230/" class="link"><img src="assets/imgs/icons8-linkedin-2-27.png" alt="" style="padding-bottom:6px;"></a>
-                <!-- <a href="javascript:void(0)" class="link"><img src="assets/imgs/icons8-git-27.png" alt="" style="padding-bottom:6px;"></a> -->
-        </footer>
-    </div> <!-- end of page footer -->
-	
-	<!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
-    <!-- bootstrap 3 affix -->
-	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
-    <!-- Meyawo js -->
-    <script src="assets/js/meyawo.js"></script>
-
+    </div>
+    <footer><span>© 2022 All rights reserved</span></footer>
 </body>
+<script src="script.js"></script>
 </html>
