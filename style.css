@@ -30,7 +30,6 @@ body{
 .myname{
     font-size: 2.5rem;
     margin: .8rem;
-    font-family: 'Anton', sans-serif;
     color:white ;
 }
 .subnav ul{
@@ -58,7 +57,7 @@ body{
 }
 .subnav li:hover{
     background-color: gray;
-    /* border-radius: 10px; */
+    border-radius: 10px;
 }
 .linksinprojects li a:hover{
     background-color: white;
@@ -68,6 +67,16 @@ body{
 
 .project_des>h5{
     color: gray;
+}
+.resume{
+    height: 300px;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding:0;
+    margin: auto;
 }
 .resume a{
     text-align: center;
@@ -103,7 +112,7 @@ body{
     color: gray;
 }
 .photo{
-    width: 721px;
+    width: 1000px;
     margin: auto;
     margin-top: 40px;
     display: grid;
@@ -125,7 +134,7 @@ body{
     color: white;
 }
 .des{
-    width: 721px;
+    width: 1001px;
     margin: auto;
     text-align: justify;
     margin-top: 15px;
@@ -170,7 +179,9 @@ body{
 }
 .serviceimg{
     margin: auto;
-    max-width: 1000px;
+    /* max-width: 1000px;
+     */
+     width: 100%;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -183,12 +194,12 @@ body{
     width: 500px;
     background-color: white;
 }
-/* .serviceimgbox{
+ /* .serviceimgbox{
     width: 300px;
     border: 5px white;
     height: 300px; 
-    /* background-color: white; */
-} */
+    background-color: white;
+} */ */
 /* .siillimg{
     width: 200px;
 } */
@@ -201,6 +212,7 @@ body{
 }
 #websites{
     grid-template-columns: repeat(2,1fr);
+    width: 100%;
 }
 /* #websites>div{
     width: 330px;
@@ -245,14 +257,14 @@ body{
 .servicesdove{
     /* position: relative; */
 
-    max-width:1000px;
+    /* max-width:1000px; */
     border: 5px white;
     /* height: 210px;  */
-    background-color: white;
-    display: flex;
-    justify-content: center;
+    /* background-color: white; */
+    /* display: flex; */
+    /* justify-content: center; */
     /* flex-direction: column; */
-    align-items: center;
+    /* align-items: center; */
     padding: 50px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -282,16 +294,7 @@ body{
     backface-visibility: hidden;
 }
 
-.servicesdove img{
-    opacity: 1;
-    width:200px;
-    height: 200px;
-    display: block;
-    margin: auto;
-    border-radius: 10px;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
+
 #websites>div img{
     width: 100%;
     height: 200px;
@@ -314,12 +317,40 @@ body{
     -ms-transform: translate(-50%, -50%);
     text-align: center;
   }
+  .servicedove img{
+    opacity: 1;
+    width:300px;
+    height: 300px;
+    /* display: block; */
+    margin: auto;
+    border-radius: 10px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+  .middle2 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
   
   .serviceimg>div:hover img{
     opacity: 0.5;
   }
   
   .serviceimg>div:hover .middle {
+    opacity: 1;
+  }
+
+  .servicedove>div:hover img{
+    opacity: 0.5;
+  }
+  
+  .sola:hover .middle2 {
     opacity: 1;
   }
   
@@ -428,8 +459,8 @@ body{
     text-align: center;
     padding: 25px;
   }
-  
-  @media (max-width: 830px){
+
+  @media (max-width: 900px){
     .totoggle{
         display: flex;
     }
