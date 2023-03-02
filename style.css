@@ -160,7 +160,7 @@ body{
 }
 .services_skills,.projects{
     /* width: 721px; */
-    margin: auto;
+    /* margin: auto; */
     text-align: center;
     margin-top: 40px;
 }
@@ -178,7 +178,7 @@ body{
     margin-top: 40px;
 }
 .serviceimg{
-    margin: auto;
+    /* margin: auto; */
     /* max-width: 1000px;
      */
      width: 100%;
@@ -207,12 +207,12 @@ body{
     grid-template-columns: repeat(4,1fr);
 } */
 #skillsimg>div, #toolsimg>div, #skillsimg2>div{
-    width:20px;
+    /* width:20px; */
 
 }
 #websites{
     grid-template-columns: repeat(2,1fr);
-    width: 100%;
+    /* width: 100%; */
 }
 /* #websites>div{
     width: 330px;
@@ -227,7 +227,7 @@ body{
     max-width: 800px;
     display: flex;
     max-width:1000px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     border-radius: 10px;
     background-color: white;
     margin: auto;
@@ -436,8 +436,8 @@ body{
     width: 30px;
   }
   .stats{
-    width: 750px;
-    margin: auto;
+    /* width: 750px; */
+    /* margin: auto; */
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
@@ -451,16 +451,16 @@ body{
     transform: scale(1.05);
   }
   .calender_container{
-    width: 750px;
+    /* width: 750px; */
   }
   footer{
     background-color: #695aa6;
     color: white;
     text-align: center;
+    width: 100%;
     padding: 25px;
   }
-
-  @media (max-width: 900px){
+  @media (max-width: 1000px){
     .totoggle{
         display: flex;
     }
@@ -486,28 +486,39 @@ body{
         display: flex;
         padding-bottom: 20px;
     }
+    .bodyy{
+        width: 700px;
+        align-items: center;
+        text-align: center;
+        margin-left: 100px;
+    }
     .photo{
-        width: 480px;
+        width: 880px;
         margin: auto;
         grid-template-columns: repeat(1,1fr);
         margin-top: -30px;
+        display: flex;
     }
     .des{
-        width: 480px;
+        width: 800px;
+        margin-left: 60px;
     }
     .services_skills{
-        width: 480px;
+        width: 780px;
         margin-top: 30px;
     }
     #service_des{
         overflow-x: auto;
     }
+    .serviceimg{
+        margin-left: 70px;
+    }
     #service_des::-webkit-scrollbar{
         width: 0px;
     }
     #service_des>div{
-        width: 430px;
-        margin: auto;
+        width: 730px;
+        /* margin: auto; */
         margin-bottom: 20px;
     }
     #service_des .middle{
@@ -538,6 +549,21 @@ body{
     .projects{
         width: 480px;
     }
+    .projectheading{
+        margin-left: 400px;
+    }
+    .serviceheading{
+        margin-left: 100px;
+    }
+    .toolsheading{
+        margin-left: 100px;
+    }
+    .skillsheading{
+        margin-left: 100px;
+    }
+    .statsheading{
+        margin-left: px;
+    }
     .linksinprojects{
         display: block;
     }
@@ -551,17 +577,18 @@ body{
         grid-template-columns: repeat(1,1fr);
     }
     #websites>div{
-        width: 430px;
-        margin: auto;
+        width: 830px;
+        margin-left: 50px;
+        margin-right: 10px;
         margin-bottom: 20px;
     }
     #websites>div>div{
-        width: 270px;
+        width: 470px;
         margin: auto;
         margin-bottom: 20px;
     }
     #websites>div>div> img{
-        height:250px;
+        height:370px;
         /* margin-left: 30px; */
       }
     .contact_me{
@@ -571,14 +598,20 @@ body{
         grid-template-columns: repeat(1,1fr);
     }
     .stats{
+        margin-left: 200px;
         width: 480px;
         grid-template-columns: repeat(1,1fr);
     }
     .calender_container{
-        width: 480px;
+        width: 780px;
+        margin-left: 50px;
+    }
+    .footer{
+        width:100%;
     }
 }
-@media (max-width: 500px){
+
+  @media (max-width: 900px){
     .totoggle{
         display: flex;
     }
@@ -604,17 +637,183 @@ body{
         display: flex;
         padding-bottom: 20px;
     }
+    .bodyy{
+        width: 700px;
+        align-items: center;
+        text-align: center;
+        margin-left: 100px;
+    }
     .photo{
-        width: 350px;
+        width: 880px;
         margin: auto;
         grid-template-columns: repeat(1,1fr);
         margin-top: -30px;
+        display: flex;
     }
     .des{
-        width: 350px;
+        width: 800px;
+        margin-left: 40px;
     }
     .services_skills{
-        width: 350px;
+        width: 780px;
+        margin-top: 30px;
+    }
+    #service_des{
+        overflow-x: auto;
+    }
+    .serviceimg{
+        margin-left: 50px;
+    }
+    #service_des::-webkit-scrollbar{
+        width: 0px;
+    }
+    #service_des>div{
+        width: 730px;
+        /* margin: auto; */
+        margin-bottom: 20px;
+    }
+    #service_des .middle{
+        opacity: 0;
+    }
+    #service_des img{
+        transition: 0.1 ease;
+    }
+    #service_des>div:hover img{
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    .secondary{
+        display: block;
+      }
+    #skillsimg, #toolsimg, #skillsimg2{
+        overflow-x: auto;
+    }
+    #skillsimg::-webkit-scrollbar{
+        width: 0px;
+    }
+    #skillsimg2::-webkit-scrollbar{
+        width: 0px;
+    }
+    #toolsimg::-webkit-scrollbar{
+        width: 0px;
+    }
+    .projects{
+        width: 480px;
+    }
+    .projectheading{
+        margin-left: 300px;
+    }
+    .statsheading{
+        margin-left: 100px;
+    }
+    .linksinprojects{
+        display: block;
+    }
+    .linksinprojects ul{
+        display: flex;
+    }
+    .linksinprojects li{
+        margin-top: 5px;
+    }
+    #websites{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #websites>div{
+        width: 830px;
+        margin-left: 25px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+    #websites>div>div{
+        width: 470px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    #websites>div>div> img{
+        height:370px;
+        /* margin-left: 30px; */
+      }
+    .contact_me{
+        width: 480px;
+    }
+    .contact_me ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .stats{
+        margin-left: 200px;
+        width: 480px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .calender_container{
+        width: 780px;
+        margin-left: 50px;
+    }
+    .footer{
+        width:100%;
+    }
+}
+@media (max-width: 780px){
+    .totoggle{
+        display: flex;
+    }
+    .subnav{
+        display: none;
+        width: 100%;
+    }
+    .nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .subnav ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .subnav li{
+        text-align: center;
+    }
+    .subnav a{
+        padding: 0.5rem 1rem;
+    }
+    .subnav.active{
+        display: flex;
+        padding-bottom: 20px;
+    }
+    .bodyy{
+        width: 700px;
+        align-items: center;
+        text-align: center;
+        margin-left: 100px;
+    }
+    .bodyy>h1{
+        font-size: 50px;
+    }
+    .bodyy>p{
+        font-size:20px;
+    }
+    .resume{
+        font-size: 20px;
+    }
+    .serviceimg{
+        margin-left:50px;
+    }
+    .contact_me{
+        margin-left: 200px;
+    }
+    .photo{
+        width: 750px;
+        margin: auto;
+        margin-left:120px;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: -30px;
+        display: flex;
+        /* flex-wrap: wrap; */
+    }
+    .des{
+        width: 760px;
+        margin-left: 50px;
+    }
+    .services_skills{
+        width: 780px;
         margin-top: 30px;
     }
     #service_des{
@@ -624,7 +823,186 @@ body{
         width: 0px;
     }
     #service_des>div{
-        width: 300px;
+        width: 730px;
+        /* margin: auto; */
+        margin-bottom: 20px;
+    }
+    #service_des .middle{
+        opacity: 0;
+    }
+    #service_des img{
+        transition: 0.1 ease;
+    }
+    #service_des>div:hover img{
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    .secondary{
+        display: block;
+      }
+    #skillsimg, #toolsimg, #skillsimg2{
+        overflow-x: auto;
+    }
+    #skillsimg::-webkit-scrollbar{
+        width: 0px;
+    }
+    #skillsimg2::-webkit-scrollbar{
+        width: 0px;
+    }
+    #toolsimg::-webkit-scrollbar{
+        width: 0px;
+    }
+    .projects{
+        width: 480px;
+    }
+    .projectheading{
+        margin-left: 300px;
+    }
+    .contactheading{
+        margin-left: 50px;
+    }
+    .statsheading{
+        margin-left: 50px;
+    }
+    .linksinprojects{
+        display: block;
+    }
+    .linksinprojects ul{
+        display: flex;
+    }
+    .linksinprojects li{
+        margin-top: 5px;
+    }
+    #websites{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #websites>div{
+        width: 830px;
+        margin-left: 25px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+    #websites>div>div{
+        width: 470px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    #websites>div>div> img{
+        height:370px;
+        /* margin-left: 30px; */
+      }
+    .contact_me{
+        width: 480px;
+    }
+    .contact_me ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .stats{
+        width: 480px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .calender_container{
+        width: 780px;
+    }
+    .footer{
+        width:100%;
+    }
+}
+@media (max-width: 620px){
+    .totoggle{
+        display: flex;
+    }
+    .subnav{
+        display: none;
+        width: 100%;
+    }
+    .nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .subnav ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .subnav li{
+        text-align: center;
+    }
+    .subnav a{
+        padding: 0.5rem 1rem;
+    }
+    .subnav.active{
+        display: flex;
+        padding-bottom: 20px;
+    }
+    .bodyy{
+        width: 400px;
+        align-items: center;
+        text-align: center;
+        margin-left: 100px;
+    }
+    .bodyy>h1{
+        font-size: 40px;
+    }
+    .bodyy>p{
+        font-size:20px;
+    }
+    .photo{
+        width: 350px;
+        margin: auto;
+        margin-left:120px;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: -30px;
+        flex-wrap: wrap;
+    }
+    .des{
+        margin-top: -100px;
+        text-align: center;
+        margin-left: 50px;
+        width: 480px;
+    }
+    .des>div{
+        /* width: 350px; */
+        text-align: center;
+    }
+    .services_skills{
+        /* margin-top: -100px; */
+        width: 400px;
+        margin-top: 30px;
+        /* flex-wrap: wrap; */
+    }
+    .serviceimg>div{
+        position: relative;
+        width: 150px;
+        border: 5px white;
+        height: 150px; 
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    /* .psj{
+        margin-left: 100px;
+    } */
+    .serviceimg{
+        width: 600px;
+        margin-left:-20px;
+
+    }
+    #service_des{
+        overflow-x: auto;
+    }
+    #service_des::-webkit-scrollbar{
+        width: 0px;
+    }
+    .resume>h5{
+        text-align: center;
+        font-size: 20px;
+    }
+    #service_des>div{
+        width: 200px;
         margin: auto;
         margin-bottom: 20px;
     }
@@ -641,9 +1019,6 @@ body{
     .secondary{
         display: block;
       }
-    .projects{
-        width: 350px;
-    }
     .linksinprojects{
         display: block;
     }
@@ -653,9 +1028,36 @@ body{
     .linksinprojects li{
         margin-top: 5px;
     }
+    .projectheading{
+        margin-left: 150px;
+    }
+    .contactheading{
+        margin-left: -10px;
+    }
+    .skillsheading{
+        margin-left: 200px;
+    }
+    .toolsheading{
+        margin-left: 200px;
+    }
+    .serviceheading{
+        margin-left: 100px;
+    }
+    .projects{
+        margin-top:-80px;
+    } 
+    .statsheading{
+        margin-left: 10px;
+    }
+    .stats{
+        margin-top: -10px;
+        margin-left: 60px;
+    }
     #websites>div{
-        width: 300px;
+        width: 400px;
+        flex-wrap: wrap;
         margin: auto;
+        margin-left:90px;
         margin-bottom: 20px;
     }
     #websites>div>div{
@@ -667,16 +1069,371 @@ body{
         height:200px;
         /* margin-left: 30px; */
       }
+    .contact{
+        width: 400px;
+    }
     .contact_me{
+        margin-left: 30px;
+    }
+    .contact_me ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    .calender_container{
+        width: 400px;
+        margin-left: 50px;
+    }
+    .footer{
+        width: 100%;
+        /* margin:30px; */
+    }
+}
+
+@media (max-width: 520px){
+    .totoggle{
+        display: flex;
+    }
+    .subnav{
+        display: none;
+        width: 100%;
+    }
+    .nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .subnav ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .subnav li{
+        text-align: center;
+    }
+    .subnav a{
+        padding: 0.5rem 1rem;
+    }
+    .subnav.active{
+        display: flex;
+        padding-bottom: 20px;
+    }
+    .bodyy{
+        width: 400px;
+        align-items: center;
+        text-align: center;
+        margin-left: 50px;
+    }
+    .bodyy>h1{
+        font-size: 40px;
+    }
+    .bodyy>p{
+        font-size:20px;
+    }
+    .photo{
+        width: 350px;
+        margin: auto;
+        margin-left:70px;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: -30px;
+    }
+    .des{
+        margin-top: -100px;
+        text-align: center;
+        margin-left: 10px;
+    }
+    .des>div{
+        /* width: 350px; */
+        text-align: center;
+    }
+    .services_skills{
+        /* margin-top: -100px; */
+        width: 400px;
+        margin-top: 30px;
+        /* flex-wrap: wrap; */
+    }
+    .serviceimg>div{
+        position: relative;
+        width: 150px;
+        border: 5px white;
+        height: 150px; 
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    .serviceimg{
+        width: 400px;
+        margin-left: 60px;
+    }
+    #service_des{
+        overflow-x: auto;
+    }
+    .resume>h5{
+        text-align: center;
+        font-size: 20px;
+    }
+    #service_des>div{
+        width: 200px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    #service_des .middle{
+        opacity: 0;
+    }
+    #service_des img{
+        transition: 0.1 ease;
+    }
+    #service_des>div:hover img{
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    .secondary{
+        display: block;
+      }
+    .linksinprojects{
+        display: block;
+    }
+    .linksinprojects ul{
+        display: flex;
+    }
+    .linksinprojects li{
+        margin-top: 5px;
+    }
+    .projectheading{
+        margin-left: 50px;
+    }
+    .contactheading{
+        margin-left: 70px;
+    }
+    .skillsheading{
+        margin-left: 70px;
+    }
+    .toolsheading{
+        margin-left: 50px;
+    }
+    .serviceheading{
+        margin-left: 50px;
+    }
+    .projects{
+        margin-top:-80px;
+    } 
+    .statsheading{
+        margin-left: 110px;
+    }
+    .stats{
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    #websites>div{
+        width: 400px;
+        flex-wrap: wrap;
+        margin: auto;
+        margin-left:50px;
+        margin-bottom: 20px;
+    }
+    #websites>div>div{
+        width: 270px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    #websites>div>div> img{
+        height:200px;
+        /* margin-left: 30px; */
+      }
+    .contact{
+        width: 400px;
+    }
+    .contact_me{
+        margin-left:80px;
         width: 350px;
     }
     .contact_me ul{
         grid-template-columns: repeat(1,1fr);
     }
-    .stats{
+    
+    .calender_container{
+        width: 400px;
+        margin-left: 50px;
+    }
+    .footer{
+        width:100%;
+        /* margin:30px; */
+    }
+}
+
+
+@media (max-width: 400px){
+    .totoggle{
+        display: flex;
+    }
+    .subnav{
+        display: none;
+        width: 100%;
+    }
+    .nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .subnav ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .subnav li{
+        text-align: center;
+    }
+    .subnav a{
+        padding: 0.5rem 1rem;
+    }
+    .subnav.active{
+        display: flex;
+        padding-bottom: 20px;
+    }
+    .bodyy{
+        width: 400px;
+        align-items: center;
+        text-align: center;
+        margin-left: 70px;
+
+    }
+    .bodyy>h1{
+        font-size: 40px;
+    }
+    .bodyy>p{
+        font-size:20px;
+    }
+    .photo{
         width: 350px;
+        margin: auto;
+        margin-left:70px;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: -30px;
+    }
+    .des{
+        margin-top: -100px;
+        text-align: center;
+        margin-left: 10px;
+    }
+    .des>div{
+        /* width: 350px; */
+        text-align: center;
+    }
+    .services_skills{
+        margin-top: -70px;
+        width: 400px;
+        /* flex-wrap: wrap; */
+    }
+    .serviceimg>div{
+        position: relative;
+        width: 150px;
+        border: 5px white;
+        height: 150px; 
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    .serviceimg{
+        width: 400px;
+        margin-left: 50px;
+    }
+    #service_des{
+        overflow-x: auto;
+    }
+    #service_des::-webkit-scrollbar{
+        width: 0px;
+    }
+    .resume>h5{
+        text-align: center;
+        font-size: 20px;
+    }
+    #service_des>div{
+        width: 200px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    #service_des .middle{
+        opacity: 0;
+    }
+    #service_des img{
+        transition: 0.1 ease;
+    }
+    #service_des>div:hover img{
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    .secondary{
+        display: block;
+      }
+    .linksinprojects{
+        display: block;
+    }
+    .linksinprojects ul{
+        display: flex;
+    }
+    .linksinprojects li{
+        margin-top: 5px;
+    }
+    .projectheading{
+        margin-left: 150px;
+    }
+    .contactheading{
+        margin-left: 130px;
+    }
+    .skillsheading{
+        margin-left: 50px;
+    }
+    .toolsheading{
+        margin-left: 50px;
+    }
+    .serviceheading{
+        margin-left: 50px;
+    }
+    .projects{
+        margin-top:-80px;
+    } 
+    .statsheading{
+        margin-left: 220px;
+    }
+
+    #websites>div{
+        width: 400px;
+        flex-wrap: wrap;
+        margin: auto;
+        margin-left:70px;
+        margin-bottom: 20px;
+    }
+    #websites>div>div{
+        width: 270px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    #websites>div>div> img{
+        height:200px;
+        /* margin-left: 30px; */
+      }
+    .contact{
+        width: 400px;
+    }
+    .contact_me{
+        margin-left: 90px;
+    }
+    .contact_me ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .stats{
+        /* width: 350px; */
+        margin-left: 25px;
     }
     .calender_container{
-        width: 350px;
+        width: 400px;
+        margin-left: 50px;
+    }
+    .footer{
+        width:100%;
+        /* margin:30px; */
     }
 }
