@@ -603,9 +603,9 @@ body{
         width: 780px;
         margin-left: 50px;
     }
-    .footer{
+    /* footer{
         width:100%;
-    }
+    } */
 }
 
   @media (max-width: 900px){
@@ -745,9 +745,10 @@ body{
         width: 780px;
         margin-left: 50px;
     }
-    .footer{
-        width:100%;
+    footer{
+        width:900px;
     }
+    
 }
 @media (max-width: 780px){
     .totoggle{
@@ -901,8 +902,8 @@ body{
     .calender_container{
         width: 780px;
     }
-    .footer{
-        width:100%;
+    footer{
+        width:900px;
     }
 }
 @media (max-width: 620px){
@@ -1029,7 +1030,7 @@ body{
         margin-left: 150px;
     }
     .contactheading{
-        margin-left: -10px;
+        margin-left: 150px;
     }
     .skillsheading{
         margin-left: 200px;
@@ -1078,11 +1079,10 @@ body{
     
     .calender_container{
         width: 400px;
-        margin-left: 50px;
+        margin-left: 100px;
     }
-    .footer{
+    footer{
         width: 100%;
-        /* margin:30px; */
     }
 }
 
@@ -1161,7 +1161,7 @@ body{
     }
     .serviceimg{
         width: 400px;
-        margin-left: 60px;
+        margin-left: 50px;
     }
     #service_des{
         overflow-x: auto;
@@ -1198,25 +1198,25 @@ body{
         margin-top: 5px;
     }
     .projectheading{
-        margin-left: 50px;
+        margin-left: 40px;
     }
     .contactheading{
-        margin-left: 70px;
+        margin-left: 90px;
     }
     .skillsheading{
-        margin-left: 70px;
+        margin-left: 90px;
     }
     .toolsheading{
         margin-left: 50px;
     }
     .serviceheading{
-        margin-left: 50px;
+        margin-left: 80px;
     }
     .projects{
-        margin-top:-80px;
+        margin-top:-50px;
     } 
     .statsheading{
-        margin-left: 110px;
+        margin-left: 10px;
     }
     .stats{
         margin-top: 10px;
@@ -1251,12 +1251,11 @@ body{
     
     .calender_container{
         width: 400px;
-        margin-left: 50px;
+        /* margin-left:; */
     }
-    .footer{
-        width:100%;
-        /* margin:30px; */
-    }
+    /* footer{
+        width:1600px;
+    } */
 }
 
 
@@ -1429,8 +1428,7 @@ body{
         width: 400px;
         margin-left: 50px;
     }
-    .footer{
-        width:100%;
-        /* margin:30px; */
+    footer{
+        width:515px;
     }
 }
