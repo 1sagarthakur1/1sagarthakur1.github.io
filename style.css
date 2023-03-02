@@ -450,9 +450,6 @@ body{
   .stats img:hover{
     transform: scale(1.05);
   }
-  .calender_container{
-    /* width: 750px; */
-  }
   footer{
     background-color: #695aa6;
     color: white;
