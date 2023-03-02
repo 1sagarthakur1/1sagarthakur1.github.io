@@ -1039,7 +1039,7 @@ body{
         margin-left: 200px;
     }
     .serviceheading{
-        margin-left: 100px;
+        margin-left: 160px;
     }
     .projects{
         margin-top:-80px;
@@ -1071,7 +1071,7 @@ body{
         width: 400px;
     }
     .contact_me{
-        margin-left: 30px;
+        margin-left: 50px;
     }
     .contact_me ul{
         grid-template-columns: repeat(1,1fr);
@@ -1251,11 +1251,11 @@ body{
     
     .calender_container{
         width: 400px;
-        /* margin-left:; */
+        margin-left:50px;
     }
-    /* footer{
-        width:1600px;
-    } */
+    footer{
+        width:500px;
+    }
 }
 
 
