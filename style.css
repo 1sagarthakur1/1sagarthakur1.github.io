@@ -3,12 +3,14 @@
 }
 
 body{
-    background-image: url(imgs/Picsart_23-04-18_11-33-21-104.png);
+    background-image: url(imgs/back3.png);
+
     background-repeat: no-repeat;
     /* background-color: rgb(9, 11, 14); */
     background-size: contain;
     margin-top: 200px;
     padding: 0;
+
 
     /* font-variant: small-caps; */
     letter-spacing: 0.1em;
@@ -26,10 +28,14 @@ body{
     right: 0;
     width: 100%;
     z-index: 999;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 .link{
     color: white ;
+    border-radius: 20px;
+
 
 }
 .myname{
@@ -62,8 +68,14 @@ body{
     font-size: 1.2rem;
 }
 .subnav li:hover{
-    background-color: gray;
+    background-color: white;
+    margin-left: 20px;
+    /* color: black; */
+    margin-right: 20px;
     border-radius: 10px;
+}
+.subnav li:hover a{
+    color: #695aa6;
 }
 .linksinprojects li a:hover{
     background-color: white;
@@ -149,7 +161,6 @@ body{
     text-align: justify;
     margin-top: 15px;
 }
-
 .des p{
     font-family:Arial, Helvetica, sans-serif;
     color: gray;
