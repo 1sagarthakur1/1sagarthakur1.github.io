@@ -3,9 +3,13 @@
 }
 
 body{
+    background-image: url(imgs/Picsart_23-04-18_11-33-21-104.png);
+    background-repeat: no-repeat;
     /* background-color: rgb(9, 11, 14); */
-    margin: 0px;
-    padding: 0px;
+    background-size: contain;
+    margin-top: 200px;
+    padding: 0;
+
     /* font-variant: small-caps; */
     letter-spacing: 0.1em;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -472,6 +476,9 @@ body{
     padding: 25px;
   }
   @media (max-width: 1000px){
+    body{
+        margin-top: 100px;
+    }
     .totoggle{
         display: flex;
     }
@@ -623,6 +630,9 @@ body{
 }
 
   @media (max-width: 900px){
+    body{
+        background-size: 910px;
+    }
     .totoggle{
         display: flex;
     }
@@ -775,6 +785,9 @@ body{
     
 }
 @media (max-width: 780px){
+    body{
+        background-size: 910px;
+    }
     .totoggle{
         display: flex;
     }
@@ -931,6 +944,13 @@ body{
     }
 }
 @media (max-width: 620px){
+    body{
+        background-size: 600px;
+        background-image: url(imgs/back2.png);
+
+        margin-top: 180px;
+        /* height: 1000px; */
+    }
     .totoggle{
         display: flex;
     }
@@ -1111,6 +1131,12 @@ body{
 }
 
 @media (max-width: 520px){
+    body{
+        background-image: url(imgs/back2.png);
+        background-size: 520px;
+        /* width: 520px; */
+        margin-top: 150px;
+    }
     .totoggle{
         display: flex;
     }
@@ -1240,7 +1266,8 @@ body{
         margin-top:-50px;
     } 
     .statsheading{
-        margin-left: 10px;
+        /* margin:auto; */
+        margin-left: 100px;
     }
     .stats{
         margin-top: 10px;
@@ -1284,6 +1311,12 @@ body{
 
 
 @media (max-width: 400px){
+    body{
+        background-image: url(imgs/back2.png);
+        background-size:525px;
+        margin-top: 150px;
+        /* width: auto; */
+    }
     .totoggle{
         display: flex;
     }
@@ -1314,6 +1347,7 @@ body{
         align-items: center;
         text-align: center;
         margin-left: 60px;
+        /* background-image: url(imgs/Picsart_23-04-18_11-33-21-104.png); */
 
     }
     .bodyy>h1{
